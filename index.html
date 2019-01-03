@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30876351-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-30876351-1");
+		</script>
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Testing 123</title>
+		<title>Michael Wiedinmyer</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mobile.css" />
 	</head>
+
 	<body>
-		Hello GitHub!
+		<div id="wrapper">
+			<section id="intro">
+				<div id="intro-grid">
+					<h1 class="block-text">I'm Michael.</h1>
+					<p class="block-text">I'm a Web Developer, Photographer, and a helluvagood Cook.</p>
+					<img src="./img/personal.png" alt="itme" id="itme" />
+				</div>
+
+				<div id="text-me">
+					<p>I'm currently working as a System Administrator, supporting .NET web applications in Windows Environments.</p>
+				</div>
+				<img src="./img/powershell.png" id="intro-splash" />
+			</section>
+
+			<section id="projects">
+				<header><h1 class="block-text">Current Projects</h1></header>
+				<div id="projects-grid">
+					<div id="left-text">
+						<p>I have been working with HTML/CSS in some form or another for the majority of my adult life.</p>
+						<p class="strong">
+							In 2017, I left a restaurant job in Philadelphia to work in Infrastructure at an up and coming web company in Media, PA.
+						</p>
+						<p>
+							While I mostly work the Infrastructure side of things, I spend a lot of my time scripting fairly complex solutions in
+							PowerShell and have even given two knowledge shares on CSS Grid and Animation to my colleagues.
+						</p>
+						<p>In my spare time, I obsess over new web technologies and have been making mock-ups for my existing workplace.</p>
+					</div>
+					<aside><img src="./img/mobile.gif" id="right-picture" /></aside>
+				</div>
+			</section>
+
+			<section id="contact">
+				<header><h1 class="block-text">Let's work together</h1></header>
+				<div id="mail-link">
+					<a href="mailto:hello@michaelwiedinmyer.com">Email</a> <br />
+					<a href="https://github.com/MichaelWiedinmyer" target="new">GitHub</a> <br />
+					<a href="https://www.linkedin.com/in/michaelwiedinmyer/" target="new">LinkedIn</a> <br />
+					<a href="https://codepen.io/michaelwiedinmyer/#" target="new">CodePen</a> <br />
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div id="foot-wrap">
+				<p>Made with &lt; <span style="color: #e25555;">&#9829;</span>&gt; in Philadelphia | 2018 Michael Wiedinmyer</p>
+			</div>
+		</footer>
 	</body>
 </html>

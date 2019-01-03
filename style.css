@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #222;
+    font-size: 1.25em;
+}
+
+#insta ul {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 300px;
+    height: 60px;
+    border-bottom: 1px #333 solid;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#wrapper {
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    margin: 0 auto;
+    width: 800px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100%;
+    height: 6em;
+}
+
+#menu-home {
+    width: 100%;
+    height: 6em;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    grid-template-areas: "menu . home . .";
+}
+
+#home {
+    grid-area: home;
+    align-self: center;
+}
+
+#home > a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8em;
+}
+
+#intro {
+    margin: 0 auto;
+    margin-bottom: 20em;
+    width: 100%;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#intro-grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "text photo"
+        "block photo";
+    justify-items: center;
+    align-items: start;
+}
+
+#intro-grid h1 {
+    grid-area: text;
+    justify-self: left;
+    align-self: end;
+    display: inline-block;
+    font-size: 48px;
+}
+
+#intro-grid p {
+    grid-area: block;
+    font-size: 24px;
+    align-self: start;
+    margin: 0;
+}
+
+#intro-grid img {
+    align-self: end;
+    justify-self: center;
+    grid-area: photo;
+}
+
+.block-text {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 1px;
+    margin-bottom: 0;
+}
+
+#text-me {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#text-me p {
+    text-align: justify;
+}
+
+#itme {
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+#intro-splash {
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.showcase {
+    color: darkred;
+    font-size: 18px;
+}
+.strong {
+    font-weight: bold;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    padding: 15px 0 15px 0;
+}
+
+#projects header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2em;
+}
+
+#projects h1 {
+    display: inline-block;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+#projects-grid #left-text {
+    text-align: justify;
+}
+
+#contact header {
+    text-align: center;
+    margin: 3em;
+}
+
+#contact #mail-link,
+#mail-link a {
+    text-align: center;
+    text-decoration: none;
+    color: darkred;
+    font-size: 24px;
+}
+
+a:hover {
+    color: #333 !important;
+}
+
+footer {
+    position: relative;
+    margin-top: 4em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 48px;
+    background-color: #111;
+}
+
+#foot-wrap {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#foot-wrap p {
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    #intro h1 {
+        margin-top: 0;
+    }
+
+    #intro-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "text"
+            "photo"
+            "block";
+    }
+
+    #text-me {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #intro-splash {
+        display: inline-block;
+        position: relative;
+
+        width: auto !important;
+        image-rendering: pixelated;
+    }
+
+    #projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #left-text {
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #left-text > * {
+        text-align: left;
+    }
+
+    footer {
+        height: 96px;
+    }
+    #foot-wrap {
+        height: 100%;
+    }
+}
