@@ -36,8 +36,8 @@
                 <div id="text-me">
                     <p>
                         I'm currently working as a Jr Software Engineer, mostly
-                        creating experiences with the Microsoft stack (.Net
-                        framework, .Net Core, and Typescript, Azure Functions)
+                        creating experiences with the Microsoft stack (Net
+                        framework, Net Core, Typescript, Azure Functions)
                     </p>
                     <p>
                         I have a strong love for CSS, making the end user
@@ -62,12 +62,8 @@
                             something great!
                         </p>
                         <p class="strong">
-                            I have been working with HTML/CSS in some form or
-                            another for the majority of my adult life. I
-                            remember my very first website was built using some
-                            WebTV make-your-own-website editor, which mostly
-                            comprised of Dragon Ball Z GIFs on an otherwise
-                            blank page.
+                            I have been working with HTML/CSS/Javascript in some form or
+                            another for the majority of my life, mostly focusing on the Frontend.
                         </p>
                         <p>
                             I previously came from an Infrastructure background
@@ -75,11 +71,11 @@
                             complex solutions in PowerShell. A lot of which is
                             still being used in production and serves as a
                             guildeline on how future implimentations should be
-                            created.
+                            created within the company.
                         </p>
                         <p>
-                            In my spare time, I obsess over new web technologies
-                            and can never quite get enough.
+                            In my spare time I can be found obsessing over new web technologies (Looking at you Vue)
+                            and meandering through Philadelphia &RightArrow; &#128276;
                         </p>
                     </div>
                 </div>
@@ -98,11 +94,14 @@
         <footer>
             <div id="foot-wrap">
                 <p>
-                    Made with &lt;
-                    <span style="color: #e25555;">&#9829;</span>&gt; in
-                    Philadelphia | 2019 Michael Wiedinmyer
+                    Made in Philadelphia | <span id="current-year"></span> Michael Wiedinmyer
                 </p>
             </div>
         </footer>
+        <script>
+            var date = new Date();
+            var currentYearElement = document.getElementById("current-year");
+            currentYearElement.innerText = date.getFullYear();
+        </script>
     </body>
 </html>
