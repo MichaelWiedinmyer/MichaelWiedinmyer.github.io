@@ -104,19 +104,6 @@ h1 {
     margin-bottom: 0;
 }
 
-#icons-me {
-    margin: 5% 0 5% 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.icons-me-icon {
-    align-self: center;
-    justify-self: center;
-    height: 175px;
-    width: 175px;
-}
-
 #itme {
     align-self: center;
     justify-self: center;
@@ -263,10 +250,6 @@ footer {
         grid-template-columns: 1fr;
         margin-left: 5%;
         margin-right: 5%;
-    }
-
-    #icons-me {
-        display: none;
     }
 
     #intro-splash {
