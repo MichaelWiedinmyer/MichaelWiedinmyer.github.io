@@ -93,6 +93,15 @@ h1 {
     grid-area: photo;
 }
 
+#text-me {
+    margin: 5% 0 5% 0;
+}
+
+.centered {
+    display: block;
+    text-align: center;
+}
+
 .block-text {
     display: inline-block;
     background-color: black;
@@ -108,8 +117,8 @@ h1 {
     align-self: center;
     justify-self: center;
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 225px;
+    width: 225px;
 }
 
 #intro-splash {
@@ -123,12 +132,6 @@ h1 {
     font-size: 18px;
 }
 
-.strong {
-    font-weight: bold;
-    border-top: 1px black solid;
-    border-bottom: 1px black solid;
-    padding: 15px 0 15px 0;
-}
 
 #projects header {
     display: flex;
@@ -147,6 +150,10 @@ h1 {
     justify-items: center;
     align-items: center;
     grid-gap: 20px;
+}
+
+#left-text {
+    margin-bottom: 2em;
 }
 
 #contact header {
@@ -243,6 +250,10 @@ footer {
             "text"
             "photo"
             "block";
+    }
+
+    .block-text {
+        font-size: 2em;
     }
 
     #text-me {
